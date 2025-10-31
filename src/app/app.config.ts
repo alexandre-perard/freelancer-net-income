@@ -1,8 +1,8 @@
-import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
-import { provideRouter } from '@angular/router';
+// Copyright Alexandre Perard 2025
+// Licensed under the EUPL-1.2 or later
 
-import { routes } from './app.routes';
+import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes)]
+  providers: [provideZoneChangeDetection({ eventCoalescing: true })]
 };
